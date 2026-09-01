@@ -17,7 +17,7 @@ Geospatial analysis of retail store performance and market expansion potential f
 
 Store performance doesn't depend only on the store itself — local demographics, population density, and competitor proximity all play a role. The analysis mapped these factors spatially and ran statistical correlations to rank locations by potential.
 
-- Merged store location data with regional sociodemographic datasets
+- Merged store location data with public census data at district level
 - Built interactive maps with Folium and GeoPandas to visualize performance patterns
 - Extracted and preprocessed data from SQL databases
 - Statistical correlation analysis between demographic indicators and store performance metrics
@@ -25,7 +25,7 @@ Store performance doesn't depend only on the store itself — local demographics
 ## Project Structure
 
 ```
-├── Fatter_Public.ipynb    # Analysis notebook (synthetic data)
+├── Fater_Public.ipynb    # Analysis notebook (synthetic data)
 ├── sample_data/           # Synthetic data matching original structure
 ├── visualizations/        # Output maps and charts
 └── README.md
