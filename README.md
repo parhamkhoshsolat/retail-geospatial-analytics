@@ -1,45 +1,51 @@
-# Retail Geospatial Analytics — Fater S.p.A. Challenge
+# Retail Geospatial Analytics: Fater S.p.A. Challenge
 
-![Python](https://img.shields.io/badge/python-3.8%2B-yellow)
-![GeoPandas](https://img.shields.io/badge/GeoPandas-0.14-green)
-![Folium](https://img.shields.io/badge/Folium-0.15-blue)
+A four-person university team on a Fater S.p.A. challenge: we mapped stores to census districts and compared districts by store potential per resident.
 
-Geospatial analysis of retail store performance and market expansion potential for Fater S.p.A. (Procter & Gamble – Angelini Industries joint venture). Store location data was combined with sociodemographic indicators to identify high-potential distribution areas across Italy.
+<p>
+  <a href="https://www.parhamkhoshsolat.com/projects/retail-geospatial"><img src="https://img.shields.io/badge/Write--up-portfolio-5dc6ff?style=flat-square&labelColor=0a1422" alt="Write-up: portfolio"></a>
+  <img src="https://img.shields.io/badge/2024-team_of_4-5dc6ff?style=flat-square&labelColor=0a1422" alt="2024: team of 4">
+  <img src="https://img.shields.io/badge/Data-synthetic-5dc6ff?style=flat-square&labelColor=0a1422" alt="Data: synthetic">
+</p>
 
-## Team
+## Overview
 
-- Parham Khosh Solat
-- Shayan Ekramnia
-- Farshad Farahtaj
-- Sara Aboudarda
+Course-linked industry challenge with Fater S.p.A. (the Procter & Gamble and Angelini joint venture). A GeoPandas spatial join (point-in-polygon, EPSG:4326) attaches each store to its census district; store counts and Fater's per-store potential score are aggregated by district and divided by population, so districts of different sizes can be compared. Output: a choropleth of potential per resident plus Folium maps of stores and districts.
 
-## Approach
+## What I did
 
-Store performance doesn't depend only on the store itself — local demographics, population density, and competitor proximity all play a role. The analysis mapped these factors spatially and ran statistical correlations to rank locations by potential.
+I did the statistics and analysis part: the spatial join, the per-resident metric and the maps. Store data came from a MySQL database.
 
-- Merged store location data with public census data at district level
-- Built interactive maps with Folium and GeoPandas to visualize performance patterns
-- Extracted and preprocessed data from SQL databases
-- Statistical correlation analysis between demographic indicators and store performance metrics
+## Results
 
-## Project Structure
+The real results belong to Fater and are not public. This repository reruns the same method on synthetic data with the original structure.
 
-```
-├── Fater_Public.ipynb    # Analysis notebook (synthetic data)
-├── sample_data/           # Synthetic data matching original structure
-├── visualizations/        # Output maps and charts
-└── README.md
+## Run it
+
+```bash
+git clone https://github.com/parhamkhoshsolat/retail-geospatial-analytics.git
+cd retail-geospatial-analytics
+jupyter notebook Fater_Public.ipynb
 ```
 
-## Legal Note
+## Project layout
 
-The original dataset was provided by Fater S.p.A. for educational purposes only. This repository contains synthetic sample data that mirrors the structure of the original — no proprietary data is included. All intellectual property rights remain with Fater S.p.A.
+```
+├── Fater_Public.ipynb    # analysis notebook (synthetic data)
+├── sample_data/          # synthetic data matching the original structure
+└── visualizations/       # output maps and charts
+```
 
-## Course
+## Team & course
 
-Statistical Learning and Data Analysis — University of Naples Federico II
-Supervisor: Prof. Roberta Siciliano
+Statistical Learning and Data Analysis, University of Naples Federico II. Supervisor: Prof. Roberta Siciliano. Team: Parham Khosh Solat, Shayan Ekramnia, Farshad Farahtaj, Sara Aboudarda.
+
+The original dataset was provided by Fater S.p.A. for educational use only; no proprietary data is included here, and all rights to it remain with Fater S.p.A.
 
 ## License
 
-MIT
+MIT. See [`LICENSE`](LICENSE).
+
+---
+
+Part of my portfolio: [parhamkhoshsolat.com](https://www.parhamkhoshsolat.com)
