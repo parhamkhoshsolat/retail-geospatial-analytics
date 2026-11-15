@@ -8,9 +8,7 @@
 - Statistical analysis of store performance metrics
 
 ### Database Skills
-- SQL query design and execution
-- Database connection and management in Python
-- Working with structured data from relational databases
+- A MySQL connection class and the original store query, kept as reference code (the public notebook runs on CSV files and does not execute them)
 
 ### Geospatial Analysis
 - Processing and visualizing geographic data
@@ -36,9 +34,8 @@
 - Population demographics analysis
 
 ### Decision Support
-- Creating data-backed insights for business decisions
-- Identifying high-potential areas for store expansion
-- Performance evaluation across different store types
+- A per-resident potential measure, so districts of different population can be compared
+- (In the public notebook this runs on synthetic data, so it shows the method, not a business finding)
 
 ### Data Storytelling
 - Converting raw data into actionable insights
@@ -46,7 +43,7 @@
 - Structuring analysis to address specific business questions
 
 ## Project Management
-- Working with real-world business data
+- Working with real business data in the original project (not included here)
 - Collaborating with team members on complex analysis
 - Meeting the requirements of a corporate challenge
 

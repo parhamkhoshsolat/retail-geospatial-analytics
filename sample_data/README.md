@@ -1,8 +1,8 @@
 # Sample Data Directory
 
-This directory will contain synthetic sample data files that mimic the structure of the original dataset provided by Fatter company.
+This directory contains synthetic sample data files that mimic the structure of the original dataset provided by Fater S.p.A.
 
-When you run the Jupyter notebook (`Fatter_Public.ipynb`), it will automatically generate:
+The files are committed. If they are missing, the Jupyter notebook (`Fater_Public.ipynb`) generates them:
 
 1. `stores_sample.csv` - Synthetic data mimicking store information
 2. `sociodemographic_sample.csv` - Synthetic demographic information by district
@@ -12,4 +12,4 @@ These files are generated programmatically with random data that maintains the s
 
 ## Note on Data Usage
 
-This synthetic data is provided for demonstration purposes only and to show the analysis methodology. It is not derived from or representative of the original proprietary data provided by Fatter company for the challenge.
+This synthetic data is provided for demonstration purposes only and to show the analysis methodology. It is not derived from or representative of the original proprietary data provided by Fater S.p.A. for the challenge. The synthetic district polygons overlap in places and most stores fall outside every polygon, so the outputs show the method only.
