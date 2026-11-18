@@ -1,0 +1,10 @@
+# Packages the notebook imports. mysql-connector-python is imported at the top
+# for the original MySQL code, which this public version does not run.
+pandas
+numpy
+geopandas
+shapely
+folium
+matplotlib
+mysql-connector-python
+jupyter

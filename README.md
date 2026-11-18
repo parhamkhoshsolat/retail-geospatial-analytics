@@ -31,6 +31,7 @@ The real results belong to Fater and are not public. This repository reruns the 
 ```bash
 git clone https://github.com/parhamkhoshsolat/retail-geospatial-analytics.git
 cd retail-geospatial-analytics
+pip install -r requirements.txt
 jupyter notebook Fater_Public.ipynb
 ```
 
@@ -39,7 +40,8 @@ jupyter notebook Fater_Public.ipynb
 ```
 ├── Fater_Public.ipynb    # analysis notebook (synthetic data)
 ├── sample_data/          # synthetic data matching the original structure
-└── visualizations/       # output maps and charts
+├── visualizations/       # output maps and charts
+└── requirements.txt
 ```
 
 ## Team & course
